@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
@@ -36,7 +37,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
+          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-10">
             Highly motivated junior developer with a love for front end design.
             Transitioned into coding after dabbling in the web 3.0 space and
             audio production, sparking my interest when I tried to build a
@@ -47,14 +48,14 @@ const HeroSection = () => {
             design.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
+            <Link href="#contact" className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
               Contact Me
-            </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+            </Link>
+            <Link target="_blank" href="https://drive.google.com/file/d/1so5tVjKA0u7FaBRZFRnbe3nspHju3dc6/view?usp=drive_link" download className="px-6 py-3 border-2 border-purple-500 w-full sm:w-fit bg-[#121212] hover:bg-slate-800 rounded-full text-white mt-3">
+              <span>
                 Download CV
               </span>
-            </button>
+            </Link>
           </div>
         </motion.div>
         <motion.div

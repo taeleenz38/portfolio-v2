@@ -35,7 +35,7 @@ const EmailSection = () => {
   };
 
   return (
-    <section className="grid md:grid-cols-2 my-12 md:y-12 py-24 gap-4 relative">
+    <section id="contact" className="grid md:grid-cols-2 my-12 md:y-12 py-24 gap-4 relative">
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] hidden md:block from-purple-900 to-transparent rounded-full h-72 w-72 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/12 -translate-y-1/6 z-0"></div>
       <div>
         <h5 className="text-xl font-bold text-white my-2">Let&apos;s Connect</h5>
@@ -44,10 +44,10 @@ const EmailSection = () => {
           say hi, I&apos;ll try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/taeleenz38">
+          <Link target="_blank" rel="noopener noreferrer" href="https://github.com/taeleenz38">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/taelee3">
+          <Link target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/taelee3">
             <Image src={LinkedInIcon} alt="LinkedIn Icon" />
           </Link>
         </div>
